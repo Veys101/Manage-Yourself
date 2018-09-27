@@ -1,0 +1,39 @@
+.jfx-tab-pane .tab-header-background { 
+    -fx-background-color: #36474F; 
+}
+.tablecolumn{
+    -fx-background-color:#00BCD4;
+    -fx-border-insets:0.0ex;
+    -fx-border-color:#00BCD4;
+}
+.listview{
+    -fx-font-size:14;
+    
+}
+
+#taskname{
+    
+    -fx-border-color: #36474F;
+    
+}
+
+#addbutton{
+    
+    -fx-background-color: #36474F;
+    -fx-text-fill: #ffffff;
+    
+}   
+
+#clearButton{
+    -fx-background-color: #36474F;
+    -fx-text-fill: #ffffff;
+}
+
+#showStatistic{
+    
+    -fx-background-color: #36474F;
+    -fx-text-fill: #ffffff;
+    -fx-border-insets: 0.0;
+    -fx-border-radius: 0.0px;
+    -fx-background-radius: 0.0px;
+}

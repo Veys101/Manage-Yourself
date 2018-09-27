@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="413.0" prefWidth="741.0" style="-fx-background-color: #20120F;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <ImageView fitHeight="503.0" fitWidth="741.0" opacity="0.23" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/1.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane blendMode="HARD_LIGHT" layoutY="-1.0" prefHeight="416.0" prefWidth="376.0" style="-fx-background-color: #404040;">
+         <children>
+            <Label layoutX="27.0" layoutY="103.0" prefHeight="59.0" prefWidth="336.0" text="Welcome To ManageYourself &#10;Applications" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="199.0" text="With this application,You can manage yourself better..." textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="27.0" layoutY="254.0" onAction="#handleSignup" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #F08080;" text="Sign Up" textFill="WHITE" />
+         </children></AnchorPane>
+      <Label fx:id="label" layoutX="715.0" layoutY="5.0" onMouseClicked="#handleClose" text="X" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="414.0" layoutY="34.0" prefHeight="349.0" prefWidth="290.0" styleClass="signin" stylesheets="@login.css">
+         <children>
+            <JFXTextField fx:id="user" focusColor="#26bb5a" layoutX="34.0" layoutY="78.0" onKeyPressed="#handleKey" prefHeight="25.0" prefWidth="228.0" promptText="Username" style="-fx-prompt-text-fill: #ffffff;" styleClass="text-field" stylesheets="@login.css" unFocusColor="WHITE" />
+            <JFXPasswordField fx:id="pass" focusColor="#26bb5a" layoutX="31.0" layoutY="149.0" onKeyPressed="#handleKey" prefHeight="25.0" prefWidth="228.0" promptText="Password" style="-fx-prompt-text-fill: #ffffff;" styleClass="text-field" unFocusColor="WHITE" />
+            <JFXButton fx:id="log" layoutX="34.0" layoutY="227.0" onAction="#handleLogin" prefHeight="25.0" prefWidth="228.0" style="-fx-background-color: #E45652;" text="Login" textFill="WHITE" />
+            <Label layoutX="121.0" layoutY="33.0" text="Sign In" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Hyperlink layoutX="88.0" layoutY="279.0" onMouseClicked="#handleForgotPassword" text="Forgot Password?" textFill="WHITE" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Hyperlink>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </AnchorPane>
+   </children>
+</AnchorPane>

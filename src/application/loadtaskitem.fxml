@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #333333;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.loadTaskItemController">
+    <stylesheets>
+        <URL value="@loadtaskitem.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="3.0" prefHeight="400.0" prefWidth="300.0" style="-fx-background-color: #36474F;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="101.0" layoutY="60.0" text="ADD ITEM" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="addButton" layoutX="44.0" layoutY="249.0" onAction="#handleAddButton" prefHeight="25.0" prefWidth="135.0" style="-fx-background-color: #E97875;" text="Add" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="itemName" focusColor="#26bb5a" layoutX="44.0" layoutY="180.0" prefHeight="25.0" prefWidth="201.0" promptText="Item Name" styleClass="text-field" unFocusColor="WHITE" />
+            <JFXComboBox fx:id="dayBox" focusColor="#26bb5a" layoutX="44.0" layoutY="119.0" prefHeight="25.0" prefWidth="201.0" promptText="Select Day" style=": ;" styleClass="combo-box" unFocusColor="WHITE" />
+            <Label fx:id="exitlbl" layoutX="271.0" layoutY="4.0" onMouseClicked="#closeScreen" text="X" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="status" layoutX="44.0" layoutY="315.0" prefHeight="37.0" prefWidth="135.0" textFill="ALICEBLUE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

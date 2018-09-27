@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="605.0" prefWidth="1130.0" style="-fx-background-color: #36474F;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AppController">
+    <stylesheets>
+        <URL value="@app.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane prefHeight="605.0" prefWidth="1130.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTabPane onMouseClicked="#handleTabPane" prefHeight="605.0" prefWidth="210.0">
+               <tabs>
+                  <Tab text="New Task">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-text-fill: #ffffff;" stylesheets="@app.css">
+                           <children>
+                              <JFXTextField fx:id="taskname" focusColor="#26bb5a" labelFloat="true" layoutX="3.0" layoutY="34.0" prefHeight="25.0" prefWidth="210.0" promptText="Task Name" unFocusColor="WHITE" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="25.0">
+                                 <padding>
+                                    <Insets right="5.0" />
+                                 </padding>
+                              </JFXTextField>
+                              <JFXButton fx:id="addbutton" layoutX="3.0" layoutY="83.0" onAction="#handleAddTask" prefHeight="25.0" prefWidth="110.0" text="Add" />
+                              <JFXButton fx:id="clearButton" layoutX="3.0" layoutY="119.0" onAction="#handleClearButton" prefHeight="25.0" prefWidth="110.0" text="Clear" />
+                              <Label fx:id="status" layoutX="5.0" layoutY="164.0" prefHeight="27.0" prefWidth="179.0" />
+                           </children></AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab fx:id="tabload" styleClass="jfx-tab-pane" text="Load Task">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <JFXListView fx:id="loadTask" fixedCellSize="0.0" onMouseClicked="#handleLoadTask" prefHeight="520.0" prefWidth="187.0" style="-fx-background-color: transparent;" styleClass="listview" />
+                              <JFXButton fx:id="showStatistic" layoutX="-1.0" layoutY="526.0" onAction="#handleStatistic" prefHeight="42.0" prefWidth="211.0" styleClass="listview" text="Show Statistic" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+            <ListView fx:id="mondayList" layoutX="314.0" layoutY="37.0" onMouseClicked="#handleMonday" prefHeight="568.0" prefWidth="110.0" styleClass="listview" />
+            <ListView fx:id="tuesdayList" layoutX="425.0" layoutY="37.0" onMouseClicked="#handleTuesday" prefHeight="568.0" prefWidth="112.0" styleClass="listview" />
+            <ListView fx:id="wednesdayList" layoutX="538.0" layoutY="37.0" onMouseClicked="#handleWednesday" prefHeight="568.0" prefWidth="116.0" styleClass="listview" />
+            <ListView fx:id="thursdayList" layoutX="655.0" layoutY="37.0" onMouseClicked="#handleThursday" prefHeight="568.0" prefWidth="117.0" styleClass="listview" />
+            <ListView fx:id="fridayList" layoutX="773.0" layoutY="37.0" onMouseClicked="#handleFriday" prefHeight="568.0" prefWidth="116.0" styleClass="listview" />
+            <ListView fx:id="saturdayList" layoutX="890.0" layoutY="37.0" onMouseClicked="#handleSaturday" prefHeight="568.0" prefWidth="117.0" styleClass="listview" />
+            <ListView fx:id="sundayList" layoutX="1008.0" layoutY="37.0" onMouseClicked="#handleSunday" prefHeight="568.0" prefWidth="122.0" styleClass="listview" />
+            <Label layoutX="314.0" prefHeight="37.0" prefWidth="112.0" style="-fx-background-color: #36474F;" text="Monday" textFill="#fffbfb" AnchorPane.leftAnchor="314.0">
+               <padding>
+                  <Insets left="34.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="426.0" prefHeight="37.0" prefWidth="112.0" style="-fx-background-color: #36474F;" text="Tuesday" textFill="WHITE">
+               <padding>
+                  <Insets left="34.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="538.0" prefHeight="37.0" prefWidth="117.0" style="-fx-background-color: #36474F;" text="Wednesday" textFill="WHITE">
+               <padding>
+                  <Insets left="24.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="655.0" prefHeight="37.0" prefWidth="118.0" style="-fx-background-color: #36474F;" text="Thursday" textFill="WHITE">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="773.0" prefHeight="37.0" prefWidth="116.0" style="-fx-background-color: #36474F;" text="Friday" textFill="WHITE">
+               <padding>
+                  <Insets left="42.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="889.0" prefHeight="37.0" prefWidth="119.0" style="-fx-background-color: #36474F;" text="Saturday" textFill="WHITE">
+               <padding>
+                  <Insets left="35.0" />
+               </padding>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="1008.0" prefHeight="37.0" prefWidth="122.0" style="-fx-background-color: #36474F;" text="Sunday" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets left="35.0" />
+               </padding>
+            </Label>
+            <Label layoutX="210.0" prefHeight="37.0" prefWidth="104.0" style="-fx-background-color: #36474F;" text="Time" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <padding>
+                  <Insets left="35.0" />
+               </padding>
+            </Label>
+            <ListView fx:id="timeListView" layoutX="210.0" layoutY="37.0" onMouseClicked="#handleTimeTable" prefHeight="568.0" prefWidth="103.0" styleClass="listview" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

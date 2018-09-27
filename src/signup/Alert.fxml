@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" onKeyPressed="#handleKey" prefHeight="129.0" prefWidth="514.0" styleClass="root" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="signup.AlertController">
+    <stylesheets>
+        <URL value="@alert.css" />
+    </stylesheets>
+   <children>
+      <Label fx:id="closelbl" layoutX="494.0" layoutY="1.0" onMouseClicked="#handleClose" text="X" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="statuslbl" layoutX="104.0" layoutY="25.0" prefHeight="53.0" prefWidth="367.0" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="55.0" fitWidth="60.0" layoutX="21.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/warning.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="210.0" layoutY="87.0" onAction="#handleOkButton" prefHeight="16.0" prefWidth="95.0" style="-fx-background-color: #E45652;" text="Ok" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,12 @@
+.combo-box {
+    -fx-prompt-text-fill: aliceblue;
+}
+
+.combo-box .cell {
+    -fx-background-color: #36474F;
+    -fx-text-fill: aliceblue;
+}
+.text-field {
+    -fx-prompt-text-fill: aliceblue;
+    -fx-text-fill:aliceblue;
+}

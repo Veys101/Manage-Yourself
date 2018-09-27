@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="515.0" styleClass="root" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.StatisticController">
+    <stylesheets>
+        <URL value="@statistic.css" />
+    </stylesheets>
+   <children>
+      <PieChart fx:id="piechart" layoutX="3.0" layoutY="59.0" prefHeight="450.0" prefWidth="498.0" />
+      <Label fx:id="closeLabel" layoutX="489.0" layoutY="4.0" onMouseClicked="#handleCloseLabel" text="X" textFill="#36474f">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameTask" layoutX="106.0" layoutY="19.0" prefHeight="30.0" prefWidth="300.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="percentlbl" layoutX="4.0" layoutY="517.0" prefHeight="79.0" prefWidth="507.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

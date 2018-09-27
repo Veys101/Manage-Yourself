@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="435.0" prefWidth="337.0" styleClass="root" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="signup.SignupController">
+    <stylesheets>
+        <URL value="@signup.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="131.0" layoutY="28.0" text="SIGN UP" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="email" focusColor="#26bb5a" layoutX="53.0" layoutY="93.0" onKeyPressed="#handleKey" prefHeight="25.0" prefWidth="233.0" promptText="Email" style="-fx-prompt-text-fill: #ffffff;" unFocusColor="WHITE" />
+      <JFXTextField fx:id="username" focusColor="#26bb5a" layoutX="53.0" layoutY="142.0" onKeyPressed="#handleKey" prefHeight="25.0" prefWidth="233.0" promptText="Username" style="-fx-prompt-text-fill: #ffffff;" unFocusColor="WHITE" />
+      <JFXPasswordField fx:id="password" focusColor="#26bb5a" layoutX="53.0" layoutY="191.0" onKeyPressed="#handleKey" prefHeight="25.0" prefWidth="233.0" promptText="Password" style="-fx-prompt-text-fill: #ffffff;" unFocusColor="WHITE" />
+      <JFXPasswordField fx:id="againpassword" focusColor="#26bb5a" layoutX="52.0" layoutY="240.0" onKeyPressed="#handleKey" prefHeight="25.0" prefWidth="233.0" promptText="Again Password" style="-fx-prompt-text-fill: #ffffff;" unFocusColor="WHITE" />
+      <JFXButton layoutX="52.0" layoutY="306.0" onAction="#handleSignUp" prefHeight="25.0" prefWidth="112.0" style="-fx-background-color: #E45652;" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="closelbl" layoutX="318.0" layoutY="1.0" onMouseClicked="#handleClose" text="X" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="status" layoutX="52.0" layoutY="374.0" prefHeight="30.0" prefWidth="233.0" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
