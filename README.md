@@ -1,4 +1,4 @@
-#Manage Yourself
+Manage Yourself
 ManageYourself help you to prepare a weekly program.You can login to aplication after sign up.
 If you login,you will see main window.
 >You can add task on the left section.
