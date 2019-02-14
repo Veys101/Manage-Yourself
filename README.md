@@ -8,5 +8,5 @@ If you login,you will see main window.
 - You can add/delete time on time section
 - If you choose "complete menu item" on item with right click,you increase one-point to the statistic of item.
 - "Show Statistic Section",you can see statistic of completed items...
-#ScreenShot
-![alt text](Manage-Yourself/ScreenShot/1.PNG)
+
+
